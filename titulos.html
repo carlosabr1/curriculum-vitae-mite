@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Currículom Vitae Ana Maité</title>
+    <style>
+        body {
+            font-family: "Lucida Console", "Courier New", monospace;
+            background: linear-gradient(to right, rgb(189, 189, 255), rgb(255, 233, 236));
+            padding: 0;
+            margin: 0;
+        }
+
+        header {
+            text-align: center;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover:not(.active) {
+            background-color: #111;
+        }
+
+        .active {
+            background-color: #04AA6D;
+        }
+
+        h1 {
+            background-color: black;
+            padding: 10px;
+            margin: 0;
+            color: #92a4ff;
+        }
+
+        div.gallery {
+            margin: 5px;
+            border: 1px solid #ccc;
+            float: left;
+            width: 33vw;
+        }
+
+        div.gallery:hover {
+            border: 1px solid #777;
+        }
+
+        div.gallery img {
+            width: 30%;
+            height: auto;
+        }
+
+        div.desc {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .centrado {
+            display: flex;
+            justify-content: center;
+        }
+
+        .footer {
+            background-color: #333;
+            color: #FFF;
+            padding: 10px;
+            text-align: center;
+            clear: both;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <h1>Portafolio Ana Maité Bruzón Díaz </h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="asignaturas.html">Asignaturas impartidas</a></li>
+                <li><a href="publicaciones.html">Principales Publicaciones</a></li>
+                <li><a href="eventos.html">Eventos </a></li>
+                <li><a href="posgrados.html">Posgrados</a></li>
+                <li><a class="active" href="titulos.html">Títulos y Diplomas</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <hr>
+        <h2>Principales títulos</h2>
+        <section class="centro">
+            <div class="gallery">
+                <a href="Assets/img/d1.jpg" target="_blank"><img src="Assets/img/d1.jpg"
+                        alt="Titulo de Dra. en Estomatología" width="300px"></a>
+                <div class="desc">Titulo de Dra. en Estomatología</div>
+            </div>
+            <div class="gallery">
+                <a href="Assets/img/d2.jpg" target="_blank"><img src="Assets/img/d2.jpg" alt="Titulo de Esp. 2do Grado"
+                        width="300px"></a>
+                <div class="desc">Titulo de Esp. 2do Grado</div>
+            </div>
+            <div class="gallery">
+                <a href="Assets/img/d3.jpg" target="_blank"><img src="Assets/img/d3.jpg" alt="Titulo de Master"
+                        width="300px"></a>
+                <div class="desc">Titulo de Master</div>
+            </div>
+            <div class="gallery">
+                <a href="Assets/img/d4.jpg" target="_blank"><img src="Assets/img/d4.jpg"
+                        alt="Titulo de Investigador agregado" width="300px"></a>
+                <div class="desc">Titulo de Investigador agregado</div>
+            </div>
+           
+        </section>
+        <footer class="footer">
+            <p>Derechos reservados &copy;2023</p>
+        </footer>
+    </header>
+</body>
+
+</html>

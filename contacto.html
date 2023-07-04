@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Currículom Vitae Ana Maité</title>
+    <style>
+        body {
+            font-family: "Lucida Console", "Courier New", monospace;
+            background: linear-gradient(to right, rgb(189, 189, 255), rgb(255, 233, 236));
+            padding: 0;
+            margin: 0;
+        }
+
+        header {
+            text-align: center;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover:not(.active) {
+            background-color: #111;
+        }
+
+        .active {
+            background-color: #04AA6D;
+        }
+
+        h1 {
+            background-color: black;
+            padding: 10px;
+            margin: 0;
+            color: #92a4ff;
+        }
+
+        input[type=text],
+        input[type=email],
+        textarea,
+        select {
+            width: 50%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        input[type=submit] {
+            width: 50%;
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type=submit]:hover {
+            background-color: #45a049;
+        }
+
+        div.contenedor-formulario {
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            padding: 20px;
+        }
+
+        .footer {
+            background-color: #333;
+            color: #FFF;
+            padding: 10px;
+            text-align: center;
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Portafolio Ana Maité Bruzón Díaz </h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="asignaturas.html">Asignaturas impartidas</a></li>
+                <li><a href="publicaciones.html">Principales Publicaciones</a></li>
+                <li><a href="eventos.html">Eventos </a></li>
+                <li><a href="posgrados.html">Posgrados</a></li>
+                <li><a href="titulos.html">Títulos y Diplomas</a></li>
+                <li><a class="active" href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <hr>
+        <div class="contenedor-formulario">
+            <form>
+                <label for="nombre">Nombre(s):</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Entre el nombre" minlength="2" required>
+                <br>
+                <label for="apellido">Apellidos:</label>
+                <input type="text" id="apellido" name="apellido" placeholder="Entre sus apellidos" required>
+                <br>
+                <label for="ano">Año de nacimiento:</label>
+                <input type="number" id="ano" name="ano" placeholder="Entre el año de nacimiento" max="2008" min="1990">
+                <br>
+                <label for="comentarios">Escribir sus comentarios:</label>
+                <textarea id="comentarios" name="comentarios" placeholder="Esciba aquí sus comentarios" rows="10"
+                    cols="50">
+        </textarea>
+                <br>
+                <label for="pais">País de origen:</label>
+                <select name="pais" id="pais">
+                    <optgroup label="América">
+                        <option value="cuba">Cuba</option>
+                        <option value="brasil" selected="selected">brasil</option>
+                        <option value="ecuador">ecuador</option>
+                        <option value="EstadosUnidos">EstadosUnidos</option>
+                        <option value="Chile">Chile</option>
+                    </optgroup>
+                    <optgroup label="Europa">
+                        <option value="Rusia">Rusia</option>
+                        <option value="España">España</option>
+                        <option value="Portugal">Portugal</option>
+                        <option value="Francia">Francia</option>
+                        <option value="Inglaterra">Inglaterra</option>
+                    </optgroup>
+                </select>
+                <br>
+                <label for="fecha">Fecha de nacimiento:</label>
+                <input type="date" name="fecha" id="fecha" max="2023-07-02">
+                <br>
+                <input type="submit" value="Enviar los datos">
+
+            </form>
+        </div>
+
+        <footer class="footer">
+            <p>Derechos reservados &copy;2023</p>
+        </footer>
+    </header>
+</body>
+
+</html>
